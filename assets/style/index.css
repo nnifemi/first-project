@@ -1,105 +1,121 @@
 @charset "utf-8";
-@import url(./reset.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,500;6..12,600&display=swap');
 
-/* Header styles */
+.flex {
+    display: flex;
+}
+
 header {
     height: 60px;
     background-color: #682cc0;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-header div h1 {
-    font-size: 20px;
+header div {
+    width: 80%;
 }
 
-header h1 {
-    height: 60px;
-    line-height: 50px;
-    color: #fff;
-    width: 40%;
+div h1 {
+    position: absolute;
+    text-align: left;
+    left: 0;
+    top: 0;
+    padding-left: 170px;
+}
+
+h1 {
     font-size: 18px;
-    margin-left: 30px;
-}
-
-/* Navigation styles */
-header nav {
-    width: 60%;
-    text-align: right;
-}
-
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-header nav ul li {
+    font-weight: 600;
+    color: #fff;
+    letter-spacing: 0.2px;
     line-height: 60px;
-    font-size: 18px;
-    display: inline;
-    margin-left: 15px;
 }
 
-header nav ul li a {
-    text-align: center;
-    text-decoration: none;
+.container > nav {
+    padding-right: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: left;
+    width: 80%;
+}
+
+nav ul {
+    font-size: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 60px;
+}
+
+nav ul li a {
     display: inline-block;
-    height: 60px;
-    padding: 0px 25px;
+    padding: 0 15px;
+    font-size: 15px;
     color: #fff;
+    text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 
-/* Collapse button styles */
-header .collapse {
-    width: 40px;
-    height: 40px;
-    text-align: center;
-    cursor: pointer;
-    display: none;
-}
-
-/* Hover effect for navigation links */
-header nav ul li a:hover {
+nav ul li a:hover {
     border-radius: 5px;
     background-color: #bc3ee0;
     color: #000000;
 }
 
-/* Media query to handle small screens */
-@media screen and (max-width: 768px) {
-    header nav {
-        display: none;
-    }
-
-    header .collapse {
-        display: block;
-    }
-
-    header h1 {
-        width: calc(100% - 40px);
-    }
+form {
+    display: flex;
+    margin-top: 30px;
+    font-size: 0;
 }
 
-/* Rest of your CSS styles */
+input {
+    display: block;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    margin-right: 140px;
+    margin-top: 7px;
+    top: 0;
+    text-align: right;
+}
+
+input[type=text] {
+    text-align: left;
+    height: 46px;
+    padding: 0 20px 0 32px;
+    background: #9b7cc8 url(../img/search.png) no-repeat 10px 14px;
+    background-size: 15px;
+    font-size: 17px;
+    width: 220px;
+    background-color: #5925a3;
+    font-size: 15px;
+    cursor: text;
+}
+
+::placeholder {
+    color: #baa6d9;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+}
 
 table {
     height: 52vh;
     margin-top: 120px;
     width: 65%;
-    border-collapse: separate;  
+    border-collapse: separate;
     border-radius: 10px;
 }
 
 th {
     color: #888d97;
-    font-size: 14px;
+    font-size: 14px;    
     padding: 2px;
 }
 
@@ -146,10 +162,10 @@ div {
 }
 
 .space {
-    border-spacing: 0 15px;
+    border-spacing:0 15px;
 }
 
-td a {
+td  a {
     margin-top: 10px;
     font-size: 15px;
     font-weight: 600;
@@ -164,11 +180,3 @@ td a {
 td a:hover {
     background-color: #bfcbd1;
 }
-
-.center {
-    margin-left: auto;
-    margin-right: auto;
-    place-items: center;
-}
-
-
