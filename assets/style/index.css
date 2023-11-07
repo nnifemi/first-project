@@ -137,31 +137,57 @@ div {
   Switch the nav button with the hamburger icon when the screen gets too small.
 */
 
- @media screen and (max-width: 768px) {
-    header nav {
-      display: none;
-    }
-  
-    header .collapse {
-      display: block;
-    }
-  
-    header h1 {
-      width: calc(100% - 40px);
-    }
+ /* Add this media query to handle small screens */
+@media screen and (max-width: 768px) {
+  header nav {
+    display: none;
   }
-  
-  @keyframes anim {
-    from {
-      opacity: 0;
-      translate: 20px;
-    }
-  
-    to {
-      opacity: 1;
-      translate: 0
-    }
+
+  header .collapse {
+    display: block;
+  }
 }
+
+/* Style the navigation when it's visible */
+header nav {
+  width: 100%;
+  text-align: right;
+}
+
+header nav ul {
+  list-style: none;
+  font-size: 0px;
+}
+
+header nav ul li {
+  line-height: 50px;
+  font-size: 18px;
+  display: inline;
+}
+
+header nav ul li a {
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  height: 60px;
+  padding: 0px 25px;
+  color: #fff;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Style the collapse button when it's displayed */
+header .collapse {
+  width: 40px;
+  height: 40px;
+  margin-top: calc((50px - 40px) / 2);
+  text-align: center;
+  cursor: pointer;
+  display: none;
+}
+
+/* Your other navigation styles remain the same */
+/* ... */
+
 
 td  a {
     margin-top: 10px;
