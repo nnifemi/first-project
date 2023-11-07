@@ -123,4 +123,4 @@ div {
     padding: 10px 2px;
 }
 ```
-![Table](/Project%201/assets/img/Table.png)
+![Table](assets/img/Table.png)
