@@ -12,7 +12,6 @@
 body {
     background-color: #f1f4f6;
     font-family: "Nunito Sans","Open Sans",Arial, sans-serif;
-    flex-direction: column;
 }
 
 .container {
