@@ -42,7 +42,7 @@ including the hamburger icon which appears when webpage is shrunk.
     </div>        
 </header>
 ```
-![Header](/Project%201/assets/img/Header.png)
+![Header](Header.png)
 
 The css involving the styling of the header is shown below, the background colour used and how the items where aligned.
 ```
