@@ -164,3 +164,11 @@ td a {
 td a:hover {
     background-color: #bfcbd1;
 }
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    place-items: center;
+}
+
+
