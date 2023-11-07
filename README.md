@@ -42,7 +42,7 @@ including the hamburger icon which appears when webpage is shrunk.
     </div>        
 </header>
 ```
-![Header](/Project%201/assets/img/Header.png)
+![Header](assets/img/Header.png)
 
 The css involving the styling of the header is shown below, the background colour used and how the items where aligned.
 ```
@@ -123,4 +123,4 @@ div {
     padding: 10px 2px;
 }
 ```
-![Table](/Project%201/assets/img/Table.png)
+![Table](assets/img/Table.png)

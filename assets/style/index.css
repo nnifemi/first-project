@@ -1,70 +1,102 @@
 @charset "utf-8";
-@import url(./reset.css);
+
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,500;6..12,600&display=swap');
 
+.flex {
+    display: flex;
+}
 
 header {
     height: 60px;
     background-color: #682cc0;
-    overflow: hidden;
 }
 
-header > div {
-    display: flex;
+header div {
+    width: 80%;
 }
 
-header div h1 {
-    font-size: 20px;
+div h1 {
+    position: absolute;
+    text-align: left;
+    left: 0;
+    top: 0;
+    padding-left: 170px;
 }
 
-header h1 {
-    margin-left: 30px;
-    height: 60px;
-    line-height: 50px;
+h1 {
+    font-size: 18px;
+    font-weight: 600;
     color: #fff;
-    width: 40%;
-    font-size: 18px;
+    letter-spacing: 0.2px;
+    line-height: 60px;
 }
 
-header nav {
-    width: 100%;
-    text-align: right;
+.container > nav {
+    padding-right: 16px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: left;
+    width: 80%;
 }
 
-header nav ul {
-    list-style: none;
-    font-size: 0px;
+nav ul {
+    font-size: 0;
+    list-style-type: none;
 }
 
-header nav ul li {
-    line-height: 50px;
-    font-size: 18px;
+nav ul li {
     display: inline;
+    line-height: 60px;
 }
 
-header nav ul li a {
-    text-align: center;
-    text-decoration: none;
+nav ul li a {
     display: inline-block;
-    height: 60px;
-    padding: 0px 25px;
+    padding: 0 15px;
+    font-size: 15px;
     color: #fff;
+    text-decoration: none;
     transition: all 0.5s ease-in-out;
 }
 
-header .collapse {
-    width: 40px;
-    height: 40px;
-    margin-top: calc((50px - 40px) / 2);
-    text-align: center;
-    cursor: pointer;
-    display: none;
-}
-
-header nav ul li a:hover {
+nav ul li a:hover {
     border-radius: 5px;
     background-color: #bc3ee0;
     color: #000000;
+}
+
+form {
+    display: flex;
+    margin-top: 30px;
+    font-size: 0;
+}
+
+input {
+    display: block;
+    border-radius: 20px;
+    position: absolute;
+    right: 0;
+    margin-right: 140px;
+    margin-top: 7px;
+    top: 0;
+    text-align: right;
+}
+
+input[type=text] {
+    text-align: left;
+    height: 46px;
+    padding: 0 20px 0 32px;
+    background: #9b7cc8 url(../img/search.png) no-repeat 10px 14px;
+    background-size: 15px;
+    font-size: 17px;
+    width: 220px;
+    background-color: #5925a3;
+    font-size: 15px;
+    cursor: text;
+}
+
+::placeholder {
+    color: #baa6d9;
 }
 
 .center {
@@ -75,7 +107,7 @@ header nav ul li a:hover {
 
 table {
     height: 52vh;
-    margin-top: 100px;
+    margin-top: 120px;
     width: 65%;
     border-collapse: separate;
     border-radius: 10px;
@@ -131,36 +163,6 @@ div {
 
 .space {
     border-spacing:0 15px;
-}
-
-/* 
-  Switch the nav button with the hamburger icon when the screen gets too small.
-*/
-
- @media screen and (max-width: 768px) {
-    header nav {
-      display: none;
-    }
-  
-    header .collapse {
-      display: block;
-    }
-  
-    header h1 {
-      width: calc(100% - 40px);
-    }
-  }
-  
-  @keyframes anim {
-    from {
-      opacity: 0;
-      translate: 20px;
-    }
-  
-    to {
-      opacity: 1;
-      translate: 0
-    }
 }
 
 td  a {
