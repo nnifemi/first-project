@@ -12,30 +12,38 @@ header {
     align-items: center;
 }
 
+header div h1 {
+    font-size: 20px;
+}
+
 header h1 {
+    height: 60px;
+    line-height: 50px;
     color: #fff;
+    width: 40%;
     font-size: 18px;
     margin-left: 30px;
-    width: 40%;
 }
 
 /* Navigation styles */
 header nav {
-    display: flex;
-    align-items: center;
+    width: 60%;
+    text-align: right;
 }
 
 header nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: flex-end;
 }
 
 header nav ul li {
-    display: inline;
-    margin-right: 15px;
-    font-size: 18px;
     line-height: 60px;
+    font-size: 18px;
+    display: inline;
+    margin-left: 15px;
 }
 
 header nav ul li a {
@@ -64,4 +72,95 @@ header nav ul li a:hover {
     color: #000000;
 }
 
-/* Media query to handle small
+/* Media query to handle small screens */
+@media screen and (max-width: 768px) {
+    header nav {
+        display: none;
+    }
+
+    header .collapse {
+        display: block;
+    }
+
+    header h1 {
+        width: calc(100% - 40px);
+    }
+}
+
+/* Rest of your CSS styles */
+
+table {
+    height: 52vh;
+    margin-top: 120px;
+    width: 65%;
+    border-collapse: separate;  
+    border-radius: 10px;
+}
+
+th {
+    color: #888d97;
+    font-size: 14px;
+    padding: 2px;
+}
+
+td {
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    text-align: center;
+}
+
+div {
+    border-radius: 50%;
+    padding: 10px 2px;
+}
+
+.U {
+    background-color: #e2f2fd;
+    border: 1px transparent #e2f2fd;
+    color: #4faad2;
+}
+
+.A {
+    background-color: #ffebee;
+    border: 1px transparent #ffebee;
+    color: #de8f90;
+}
+
+.C {
+    background-color: #e8f4e9;
+    border: 1px transparent #e8f4e9;
+    color: #8db876;
+}
+
+.M {
+    background-color: #e8e7f8;
+    border: 1px transparent #e8e7f8;
+    color: #7b86ca;
+}
+
+.V {
+    background-color: #fff3e0;
+    border: 1px transparent #fff3e0;
+    color: #cea74d;
+}
+
+.space {
+    border-spacing: 0 15px;
+}
+
+td a {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #727e83;
+    text-decoration: none;
+    background-color: #edf0f2;
+    border-radius: 20px;
+    padding: 12px 22px;
+    transition: all 0.3s ease-in-out;
+}
+
+td a:hover {
+    background-color: #bfcbd1;
+}
